@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mansion | Fragments of Elior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html#hero" aria-label="Fragments of Elior home">
+        <img src="images/logo.png" alt="Fragments of Elior logo">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#story">Story</a></li>
+        <li><a href="index.html#characters">Characters</a></li>
+        <li><a href="index.html#world">World</a></li>
+        <li><a href="#overview">Listing</a></li>
+        <li><a href="#layout">Layout</a></li>
+      </ul>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="section">
+      <div class="container">
+        <h1>The Mansion</h1>
+        <p class="section-intro">
+          A closer look at the house, its rooms, its history, and the details that shape the horror of Fragments of Elior.
+        </p>
+        <a href="index.html#world" class="btn primary-btn mansion-page-btn">Return to Main Page</a>
+
+        <nav class="mansion-toc" aria-labelledby="mansion-toc-title">
+          <p class="mansion-toc-label">Estate Dossier</p>
+          <h2 id="mansion-toc-title">Explore Blackthorn Estate</h2>
+          <ul>
+            <li><a href="#overview">Real Estate Listing</a></li>
+            <li><a href="#layout">Mansion Layout</a></li>
+            <li><a href="#rooms">Important Rooms</a></li>
+            <li><a href="#objects">Key Objects</a></li>
+            <li><a href="#history">Family History</a></li>
+            <li><a href="#presence">The Presence</a></li>
+          </ul>
+        </nav>
+
+        <section id="overview" class="card mansion-detail real-estate-listing">
+          <div class="archived-listing">
+            <div class="listing-photo" role="img" aria-label="An old real estate flyer showing a secluded mansion at night">
+              <div class="listing-photo-house">
+                <span></span>
+              </div>
+              <div class="listing-photo-windows">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>Original MLS Photograph</p>
+            </div>
+
+            <div class="archive-paper">
+              <p class="listing-label">Archived Posting / 1998</p>
+              <h2>Historic Secluded Estate</h2>
+              <p class="archive-price">$480,000</p>
+              <p>
+                Graceful private residence surrounded by mature trees and quiet grounds. Original woodwork,
+                generous room sizes, and unmatched privacy for a buyer seeking a home with character.
+              </p>
+
+              <ul class="listing-features archived-features">
+                <li>Grand entryway with original staircase and hand-carved trim</li>
+                <li>Formal living room, private study, dining room, and upper bedrooms</li>
+                <li>Long driveway and wooded lot with limited neighboring visibility</li>
+                <li>Partially furnished; personal items may remain with the property</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="updated-listing" aria-label="Updated listing details">
+            <p class="listing-label">Updated Listing / Internal Revision</p>
+            <h2>Estate at 17 Briar Hollow Road</h2>
+            <p class="listing-address">Hollow Creek County, secluded private acreage</p>
+
+            <div class="listing-status-row">
+              <span class="listing-status">Status: Relisted</span>
+              <span>Vacant Family Estate</span>
+            </div>
+
+            <div class="listing-facts">
+              <span><small>Current Asking Price</small>$246,846</span>
+              <span><small>Estimated Market Value</small>$612,000</span>
+              <span><small>Days on Market</small>2,846 days</span>
+              <span><small>Listed Duration</small>Approx. 8 years</span>
+              <span><small>Bedrooms</small>6</span>
+              <span><small>Bathrooms</small>4</span>
+              <span><small>Reported Size</small>6,800 sq. ft.</span>
+            </div>
+
+            <div class="listing-copy">
+              <div class="listing-subsection">
+                <h3>Property Overview</h3>
+                <p>
+                  Tucked deep within the wooded countryside of Hollow Creek County, Blackthorn Estate stands as
+                  one of the region's oldest surviving residential properties. Built in the late 19th century,
+                  the estate combines historic architecture, expansive living space, and unmatched privacy across
+                  several secluded acres.  Utilities Active.
+                </p>
+              </div>
+
+              <div class="listing-subsection">
+                <h3>Interior Details</h3>
+                <p>
+                  The residence includes multiple private quarters, a formal dining area, sitting rooms, a
+                  dedicated office space, an upper-level children's wing, and a private study containing preserved
+                  records from previous ownership. Original woodwork, preserved stone detailing, and custom
+                  interior craftsmanship remain largely untouched. 
+                </p>
+              </div>
+
+              <div class="listing-subsection">
+                <h3>Included With Sale</h3>
+                <p>
+                  Large portions of the estate have been preserved in their original condition, offering a rare
+                  opportunity for restoration enthusiasts, private collectors, or buyers seeking a secluded retreat
+                  away from modern development. Property includes archived records, personal belongings left by
+                  previous occupants, and various locked storage areas to be transferred as-is to the future owner.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="listing-section-title">Known Conditions</h3>
+            <ul class="listing-features">
+              <li>Portions of the property may require structural attention due to estate age</li>
+              <li>Intermittent electrical instability has been reported in isolated sections of the home</li>
+              <li>The property has remained vacant for an extended period of time</li>
+              <li>Nighttime tours are unavailable; serious inquiries only</li>
+              <li>Entry hall acoustics may produce footsteps from unoccupied floors</li>
+              <li>Master bedroom door has been repaired three times since vacancy</li>
+              <li>Study includes built-in shelving, locked storage, and sealed wall damage</li>
+              <li>Some mirrors, portraits, and nursery items are excluded from removal</li>
+            </ul>
+
+            <div class="listing-note">
+              <h3>Disclosure Notice</h3>
+              <p>
+              Property is associated with a previously documented residential incident involving 
+              former occupants of the estate. Due to the condition and age of archived investigative 
+              materials, portions of the historical record remain incomplete or unavailable.
+              </p>
+              <p>
+              Certain areas of the residence were temporarily restricted during the original investigation
+               and subsequent estate processing procedures. Restrictions have since been lifted.
+              </p>
+
+              <p>
+              Buyer acknowledges purchase of property in current condition and accepts all remaining
+              contents, records, and archived materials as-is.
+              </p>
+            </div>
+          </aside>
+        </section>
+
+        <section id="layout" class="card mansion-detail">
+          <h2>Mansion Layout</h2>
+          <p>Details about how the house is arranged and how players move through it will be added here.</p>
+        </section>
+
+        <section id="rooms" class="card mansion-detail">
+          <h2>Important Rooms</h2>
+          <p>Details about major rooms, discoveries, and story moments will be added here.</p>
+        </section>
+
+        <section id="objects" class="card mansion-detail">
+          <h2>Key Objects</h2>
+          <p>Details about important items and clues found throughout the house will be added here.</p>
+        </section>
+
+        <section id="history" class="card mansion-detail">
+          <h2>Family History</h2>
+          <p>Details about the family connected to the mansion will be added here.</p>
+        </section>
+
+        <section id="presence" class="card mansion-detail">
+          <h2>The Presence</h2>
+          <p>Details about the unseen force inside the house will be added here.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
