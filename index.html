@@ -1,21 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fragments of Elior | Horror Game Concept</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Your CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation -->
   <header>
-    <nav class="navbar">
-      <div class="logo">846</div>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#hero" aria-label="Fragments of Elior home"><img src="images/logo.png" alt="Fragments of Elior logo"></a>
 
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
@@ -28,25 +25,31 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
     <section id="hero" class="hero">
-      <div class="hero-overlay"></div>
       <div class="hero-content">
-      <h1 class="title">Fragments of Elior</h1>
-      <p class="tagline">Seven fragments. One truth.</p>
+        <h1 class="title fragmented-title" data-text="Fragments of Elior">
+          <span class="title-text">Fragments of Elior</span>
+          <span class="title-shard" aria-hidden="true">Fragments of Elior</span>
+          <span class="title-shard" aria-hidden="true">Fragments of Elior</span>
+          <span class="title-shard" aria-hidden="true">Fragments of Elior</span>
+        </h1>
+        <p class="tagline">Seven Fragments. One Truth.</p>
         <div class="hero-buttons">
           <a href="#story" class="btn primary-btn">Enter the Story</a>
           <a href="#devlog" class="btn secondary-btn">View Devlog</a>
         </div>
+                  <div class="status-tag">
+          STATUS: INCOMPLETE<br>
+          WORK CONTINUES...
+          </div>
       </div>
     </section>
 
-    <!-- Story Preview -->
     <section id="story" class="section">
       <div class="container two-column">
         <div class="text-block">
@@ -59,152 +62,189 @@
           </p>
           <a href="#about" class="btn primary-btn">Uncover the Truth</a>
         </div>
-                <div class="character-image">
-    <img src="images/block-placeholder.png" alt="mansion"></div>
+
+        <div class="character-image">
+          <img src="images/block-placeholder.png" alt="A dark mansion interior" />
+        </div>
       </div>
     </section>
 
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <p class="section-tag">About the Game</p>
+        <h2>Step Into the Story</h2>
 
-    <!-- About -->
-<section id="about" class="about-section">
-  <div class="about-container">
-    <p class="section-tag">About the Game</p>
-    <h2>Step Into the Story</h2>
+        <div class="about-intro">
+          <p>You weren&rsquo;t supposed to stay long.</p>
+        </div>
 
-    <div class="about-intro">
-      <p>
-        You weren&rsquo;t supposed to stay long.
-      </p>
-    </div>
+        <div class="about-text">
+          <p>
+            The house was just another listing &mdash; quiet, abandoned, and worth more
+            than it should be. But something about it feels wrong. The deeper you
+            go, the more the silence begins to shift.
+          </p>
+          <p>
+            <span class="game-title">Fragments of Elior</span> is a psychological
+            horror experience where you step into the role of Felix, a realtor
+            drawn into a home with a past that refuses to stay buried. What begins
+            as a routine walkthrough slowly becomes something far more unsettling,
+            as the house reveals pieces of a fractured family and a presence that
+            never truly left.
+          </p>
+          <p>
+            This is not just a story told through dialogue. It is told through the
+            environment, through what remains, and through what should not still be
+            there. Every room holds a piece of the truth. Every discovery pulls you
+            deeper into the mystery surrounding Elior.
+          </p>
+          <p>Some things in this house want to be found. Others do not.</p>
+        </div>
 
-    <div class="about-text">
-      <p>
-        The house was just another listing &mdash; quiet, abandoned, and worth more
-        than it should be. But something about it feels wrong. The deeper you
-        go, the more the silence begins to shift.
-      </p>
+        <div id="features" class="about-features">
+          <article class="feature-card">
+            <h3>Environmental Storytelling</h3>
+            <p>Uncover the truth through objects, rooms, and subtle details.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Psychological Horror</h3>
+            <p>Slow-building dread over cheap scares and constant noise.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Exploration-Driven</h3>
+            <p>Progress by searching the house and piecing together the past.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Hidden Mystery</h3>
+            <p>A fractured family, a lost child, and a presence still watching.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <p>
-        <span class="game-title">Fragments of Elior</span> is a psychological
-        horror experience where you step into the role of Felix, a realtor
-        drawn into a home with a past that refuses to stay buried. What begins
-        as a routine walkthrough slowly becomes something far more unsettling,
-        as the house reveals pieces of a fractured family and a presence that
-        never truly left.
-      </p>
-
-      <p>
-        This is not just a story told through dialogue. It is told through the
-        environment, through what remains, and through what should not still be
-        there. Every room holds a piece of the truth. Every discovery pulls you
-        deeper into the mystery surrounding Elior.
-      </p>
-
-      <p>
-        Some things in this house want to be found. Others do not.
-      </p>
-    </div>
-
-    <div class="about-features">
-      <div class="feature-card">
-        <h3>Environmental Storytelling</h3>
-        <p>Uncover the truth through objects, rooms, and subtle details.</p>
+    <section id="characters" class="characters">
+      <div class="characters-header">
+        <h2>Character Preview</h2>
+        <p>The house remembers them all.</p>
       </div>
 
-      <div class="feature-card">
-        <h3>Psychological Horror</h3>
-        <p>Slow-building dread over cheap scares and constant noise.</p>
+      <div class="character-grid">
+        <article class="character-card">
+          <img src="images/felix-placeholder.png" alt="Felix Carter" />
+          <h3>Felix Carter</h3>
+          <p>
+            Felix is a young realtor drawn to a property that feels&hellip; 
+            off from the moment he arrives. Logical and observant, he approaches 
+            the mansion with a sense of routine and control&mdash;but that sense 
+            begins to fracture as the house reveals itself.
+            </p>
+            <p>
+            What starts as a simple showing becomes something far more personal. 
+            The deeper Felix explores, the harder it becomes to separate what is 
+            real from what the mansion wants him to see.
+          </p>
+        </article>
+
+        <article class="character-card">
+          <img src="images/elior-placeholder.png" alt="Elior" />
+          <h3>Elior</h3>
+          <p>
+            Elior is a young boy whose presence lingers within the mansion, 
+            felt more than seen. Quiet and innocent, he remains tied to the home 
+            through scattered traces&mdash;forgotten toys, silent rooms, and a worn 
+            teddy bear that never seems to stay where it was left.
+            </p>
+            <p>
+            As the truth within the house begins to surface, Elior&apos;s story becomes 
+            impossible to ignore. Whether he is a memory, a guide, or something more, 
+            his connection to the mansion runs deeper than it first appears.
+          </p>
+        </article>
+
+        <article class="character-card">
+          <img src="images/marcus-placeholder.png" alt="Marcus" />
+          <h3>Marcus</h3>
+          <p>
+            Marcus is a dedicated provider who spent much of his life working to support his family, often at
+            the cost of being present within it. Practical and focused, he approached life with structure and
+            responsibility&mdash;but something within the mansion began to erode that stability.
+          </p>
+          <p>
+            Though he sought to maintain control, the weight of what unfolded inside the home proved too great.
+            What remains of Marcus is not just memory, but a quiet echo of a man who tried to hold everything
+            together as it slipped beyond his grasp.
+          </p>
+        </article>
+
+        <article class="character-card">
+          <img src="images/julia-placeholder.png" alt="Julia" />
+          <h3>Julia</h3>
+          <p>
+            Julia is a woman shaped by a past she cannot outrun, her presence within the mansion marked by
+            tension and quiet unrest. Guarded and distant, she carries a resentment that lingers beneath the
+            surface, influencing both her actions and the atmosphere around her.
+          </p>
+          <p>
+            As the truth within the house begins to surface, Julia&rsquo;s role becomes increasingly difficult to
+            ignore. Whether driven by regret, anger, or something deeper, her connection to the events within
+            the mansion runs far deeper than it first appears.
+          </p>
+        </article>
+
+        <article class="character-card">
+          <img src="images/blanche-placeholder.png" alt="Blanche" />
+          <h3>Blanche</h3>
+          <p>
+            Blanche is a gentle and nurturing presence within the home, offering warmth in a place that otherwise
+            feels cold and unsettled. Patient and understanding, she represents a sense of comfort that seems
+            increasingly out of place as the mansion reveals its true nature.
+          </p>
+          <p>
+            Even as darkness takes hold, traces of Blanche&rsquo;s kindness remain woven into the environment. In a
+            house filled with tension and silence, her presence stands as one of the last reminders of what once
+            felt like home.
+          </p>
+        </article>
+
+        <article class="character-card hidden-presence">
+          <img src="images/unknown-placeholder.png" alt="Unknown Presence" />
+          <h3>???</h3>
+          <p>
+            ??? is an unseen presence that lingers at the edges of the mansion, never fully revealed yet impossible
+            to ignore. Its influence is subtle at first&mdash;felt in shifting shadows, quiet distortions, and the
+            growing sense that something is always watching.
+          </p>
+          <p>
+            The deeper one ventures into the house, the more that presence begins to press against reality itself.
+            What it is&mdash;or what it wants&mdash;remains unknown.
+          </p>
+        </article>
       </div>
+    </section>
 
-      <div class="feature-card">
-        <h3>Exploration-Driven</h3>
-        <p>Progress by searching the house and piecing together the past.</p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Hidden Mystery</h3>
-        <p>A fractured family, a lost child, and a presence still watching.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Character Detail -->
-
-<section class="characters">
-  <div class="characters-header">
-    <h2>Character Preview</h2>
-    <p>The house remembers them all.</p>
-  </div>
-
-  <div class="character-grid">
-    <div class="character-card">
-      <div class="character-image">
-    <img src="images/felix-placeholder.png" alt="Felix Carter"></div>
-      <h3>Felix Carter</h3>
-      <p>An inquisitive realtor with a sharp eye for detail. What begins as a simple showing quickly turns into something far more unsettling&mdash;where every room holds a fragment of a story that refuses to stay buried.</p>
-    </div>
-
-    <div class="character-card reverse">
-      <div class="character-image">
-        <img src="images/elior-placeholder.png" alt="Elior">
-      </div>
-      <h3>Elior</h3>
-      <p>A quiet presence lingering within the walls. Innocent, unseen&hellip; yet never truly gone. Something small continues to guide those willing to look closely
-      </p>
-    </div>
-
-    <div class="character-card">
-      <img src="images/marcus-placeholder.png" alt="Marcus">
-      <h3>Marcus</h3>
-      <p>A man defined by responsibility and routine...</p>
-    </div>
-
-    <div class="character-card">
-      <img src="images/julia-placeholder.png" alt="Julia">
-      <h3>Julia</h3>
-      <p>Haunted by the past and consumed by regret...</p>
-    </div>
-
-    <div class="character-card">
-      <img src="images/blanche-placeholder.png" alt="Blanche">
-      <h3>Blanche</h3>
-      <p>A gentle soul in a house filled with unrest...</p>
-    </div>
-
-    <div class="character-card hidden-presence">
-      <img src="images/unknown-placeholder.png" alt="Unknown Presence">
-      <h3>???</h3>
-      <p>Not everything in the house belongs to memory.</p>
-    </div>
-  </div>
-
-
-    <!-- World -->
     <section id="world" class="section">
       <div class="container">
         <h2>The Mansion</h2>
         <p class="section-intro">
-          The house is more than a backdrop. Each room carries clues, memory, and dread.
-          As the truth unfolds, the environment becomes more unstable and hostile.
+          The mansion doesn&apos;t just hold memories&mdash;it distorts them.  
+          Every room reveals a piece of the truth&hellip; but not always in the ways you expect.
         </p>
+        <a href="mansion.html" class="btn primary-btn mansion-page-btn">Enter the Mansion</a>
 
         <div class="card-grid">
           <article class="card">
             <h3>Living Room</h3>
-            <p>The heart of the home, and the place where the final truth waits.</p>
+            <p>The heart of the home, where silence gathers and the final truth waits beneath the surface.
+            </p>
           </article>
-
           <article class="card">
             <h3>Study</h3>
-            <p>A space tied to Marcus, work, duty, and a life slipping out of control.</p>
+            <p>A room tied to Marcus, shaped by work, duty, and the slow unraveling of control.</p>
           </article>
-
           <article class="card">
             <h3>Child&rsquo;s Room</h3>
             <p>A place of innocence, comfort, and the loss that defines the house.</p>
           </article>
-
           <article class="card">
             <h3>Blanche&rsquo;s Room</h3>
             <p>A quiet room full of memory, love, and unfinished threads.</p>
@@ -213,51 +253,52 @@
       </div>
     </section>
 
-    <!-- Devlog -->
     <section id="devlog" class="section alt-section">
       <div class="container">
         <h2>Development Log</h2>
+        <p class="section-intro">
+          A look behind the scenes as Fragments of Elior takes shape.
+        </p>
+
         <div class="card-grid">
           <article class="card">
             <h3>Building the Website for Fragments of Elior</h3>
-            <p>
-              Creating a game concept website to showcase story, design, and development.
-            </p>
+            <p>Creating a game concept website to showcase story, design, and development.</p>
           </article>
 
           <article class="card">
             <h3>Designing Horror Through Environment</h3>
-            <p>
-              Using the mansion itself as part of the storytelling and tension.
-            </p>
+            <p>Using the mansion itself as part of the storytelling and tension.</p>
           </article>
 
           <article class="card">
             <h3>Planning the Seven Key Items</h3>
+            <p>Structuring discoveries so each one reveals more of the family&rsquo;s downfall.</p>
+          </article>
+
+          <article class="card">
+            <h3>Building Elior&rsquo;s Room</h3>
             <p>
-              Structuring discoveries so each one reveals more of the family&rsquo;s downfall.
+              I focused on making the room feel innocent, lived-in, and slightly unsettling through layout, empty space, and object placement.
             </p>
+            <a href="devlog.html" class="text-link">Read the Devlog</a>
           </article>
         </div>
       </div>
     </section>
-
-    <!-- Contact / CTA -->
     <section id="contact" class="section">
       <div class="container contact-section">
-        <h2>Get in touch</h2>
-        <p>If you'd like to connect, collaborate, or ask about the project, feel free to reach out.
-
-        </p>
-  <div class="contact-links">
-    <a href="mailto:846production@gmail.com" class="contact-btn">Email Me</a>
-    <a href="https://github.com/yourprofile" target="_blank" class="contact-btn">GitHub</a>
-  </div>
+        <h2>Get in Touch</h2>
+        <p>If you&rsquo;d like to connect, collaborate, or ask about the project, feel free to reach out.</p>
+        <div class="contact-links">
+          <a href="mailto:846production@gmail.com" class="contact-btn">Email Me</a>
+          <a href="https://www.facebook.com/846Industries" target="_blank" rel="noopener noreferrer" class="contact-btn">Facebook</a>
+          <a href="https://github.com/Riotspartan" target="_blank" rel="noopener noreferrer" class="contact-btn">GitHub</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>Fragments of Elior | Original horror game concept and web development project by 846</p>
@@ -267,4 +308,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 

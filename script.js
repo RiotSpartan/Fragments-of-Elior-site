@@ -2,20 +2,29 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a");
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
+function closeMenu() {
+  navLinks.classList.remove("active");
+  menuToggle.setAttribute("aria-expanded", "false");
 }
 
-navItems.forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-  });
-});
+function toggleMenu() {
+  const isOpen = navLinks.classList.toggle("active");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+}
 
-document.addEventListener("click", (e) => {
-  if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-    navLinks.classList.remove("active");
-  }
-});
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", toggleMenu);
+
+  navItems.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("click", (event) => {
+    const clickedOutsideMenu = !navLinks.contains(event.target);
+    const clickedOutsideButton = !menuToggle.contains(event.target);
+
+    if (clickedOutsideMenu && clickedOutsideButton) {
+      closeMenu();
+    }
+  });
+}
